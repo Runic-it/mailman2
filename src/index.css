@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 27% 8%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 27% 12%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 220 27% 12%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 27% 8%;
+
+    --secondary: 220 27% 16%;
+    --secondary-foreground: 180 100% 90%;
+
+    --muted: 220 27% 16%;
+    --muted-foreground: 180 20% 65%;
+
+    --accent: 180 100% 50%;
+    --accent-foreground: 220 27% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 27% 20%;
+    --input: 220 27% 20%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 27% 8%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 27% 12%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 220 27% 12%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 27% 8%;
+
+    --secondary: 220 27% 16%;
+    --secondary-foreground: 180 100% 90%;
+
+    --muted: 220 27% 16%;
+    --muted-foreground: 180 20% 65%;
+
+    --accent: 180 100% 50%;
+    --accent-foreground: 220 27% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 27% 20%;
+    --input: 220 27% 20%;
+    --ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: url("/images/runic-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .runic-glow {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+
+  .runic-border {
+    border: 1px solid rgba(0, 255, 255, 0.3);
+  }
+
+  .runic-bg {
+    background: rgba(30, 41, 59, 0.9);
+    backdrop-filter: blur(10px);
+  }
+}
